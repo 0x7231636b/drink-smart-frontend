@@ -2,6 +2,7 @@
   "expo": {
     "name": "drink-smart-frontend",
     "slug": "drink-smart-frontend",
+    "scheme": "drinksmart",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,7 +16,9 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "pw.hallmann.drinksmart"
+
     },
     "android": {
       "adaptiveIcon": {
@@ -24,12 +27,16 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
     },
     "expo": {
       "experiments": {
         "tsconfigPaths": true
       }
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
